@@ -3,12 +3,9 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin:0;
+  font-family: 'montsserat thin', sans-serif;
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -19,19 +16,283 @@
 	--color-background:#eee;
 }
 
-
-
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
 
 header {
-	display: grid;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(/images/achtergrond-header.jpg);
+	text-align: center;
+	color: white;
+	background-size: 100% 100%;
+	margin:0;
+	padding:0;
+}
+
+header p{
+	color:white;
+}
+
+p, h2, h3, h4, a{
+	color: #212529;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+	font-family: 'montsserat extra', sans-serif;
+}
+
+footer{
+	background-color: #6a6d6f;
+	color:white;
+	font-family: 'montsserat extra', sans-serif;
+}
+
+footer p, footer h4{
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-top: 2em;
+	text-decoration: none;
+}
+
+footer p{
+	list-style: none;
+}
+
+footer li{
+	color:white;
+	padding-top: 2em;
+	list-style-image:url("/images/Pijltje-icon.svg");
+}
+
+footer a{
+	color:white;
+}
+
+
+
+h1{
+	font-size: 3em;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	margin-bottom: 0.5em;
+	padding-top:2.5em;
+}
+
+h2{
+	padding-top: 1em;
+}
+
+h3{
+	padding-top: 1em;
+	padding-bottom: 1em ;
+}
+
+footer h4{
+	padding-bottom: 1em;
+	color:white;
+}
+
+p{
+	margin-top: 0;
+	padding-bottom: 1em;
+}
+
+hr{
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+hr:nth-of-type(4){
+	height:0em;
+	margin-left: 0%;
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
+hr:nth-of-type(6){
+	height:0em;
+	margin-left: 0%;
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+ul hr{
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	margin-right:2em;
+}
+
+a{
+	text-decoration: none;
+	color: #007bc7;
+
+}
+
+ul{
+	padding-bottom: 2em;
+}
+
+[class^="off"]{
+	background-color: #e17000;
+	height: 100vh;
+	width: 100vw;
+	max-width: 450px;
+	position: fixed;
+	top:0;
+	right:-450px;
+	display:flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transition: .5s ease;
+	z-index: 0;
+}
+
+[class^="off"] ul{
+	padding-bottom: 20em;
+}
+
+[class^="off"] li{
+	list-style-type: none;
+	padding-bottom: 1em;
+}
+
+[class^="off"] a{
+	color:white;
+	display:flex;
+	text-align: left;
+	font-size:2em;
+	padding-left: 0.5em;
+}
+/* 
+.row{
+	width:100%;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	height: 4em;
+	display: grid
+	align-items: center;
+	justify-content: center;
+
+} */
+
+nav{
+	display: flex;
+	max-height: max-content;
+	width:auto;
+	position:absolute;
+	justify-content: left;
+	z-index: 1;
+	padding-top: 1em;
+	padding-right: 1.5em;
 	
 }
 
+.ham-menu {
+	height:50px;
+	width: 50px;
+	margin-left: auto;
+	position: relative;
+	display: flex;
+	justify-content: left;
+	align-items: left;
+	right:100%;
+
+}
+
+.ham-menu span {
+	height: 7px;
+	width:100%;
+	background-color: rgb(18, 53, 82);
+	border-radius: 20px;
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	transform: translate(-50%, -50%);
+	transition: .5s ease;
+	
+}
+
+.ham-menu span:nth-child(1){
+	top:25%;
+}
+
+.ham-menu span:nth-child(3){
+	top:75%;
+}
+
+.ham-menu.active span:nth-child(1){
+	top:50%;
+	transform:translate(-50%, -50%)rotate(45deg);
+
+}
+
+.ham-menu.active span:nth-child(2){
+	opacity: 0;
+	
+}
+
+.ham-menu.active span:nth-child(3) {
+	top:50%;
+	transform: translate(-50%, 50%) translateY(-0.42em) rotate(-45deg);
+}
+
+
+.off-screen-menu.active{
+	right:0;
+}
+
+[class^="logo"]{
+
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 0;
+	max-height: max-content;
+	width: 3em;
+	position: absolute;
+	top:-.5em;
+
+}
+
+[class^="download"]{
+	width:100%;
+}
+
+/* 
+@keyframes button-animation{
+0% {
+	background-color:rgb(229, 126, 0);
+}
+100% {
+	background-color:blue;
+	transform: rotate(360deg);
+}
+} */
+/* 
+header a:first-of-type:hover{
+	animation-name: button-animation;
+	animation-duration: 1s;
+	animation-delay: .2s;
+	animation-fill-mode: forwards;
+
+}  */
+
+
+
+body[class="twee"] {
+	label {
+		background: hotpink;
+	}
+
+	
+}
