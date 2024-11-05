@@ -1,5 +1,5 @@
-    <!DOCTYPE html>
-    <html lang="nl">
+<!DOCTYPE html>
+<html lang="nl">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,62 +9,101 @@
 	    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     </head>
 
-<body class="twee">
+    <body class="twee">
 
-    <header>
+        <header>
 
-        <a href="index.html">Inloggen</a>
+            <a href="index.html">Inloggen</a>
 
-        <a href="index.html">NietMijnOverheid</a>
+            <a href="index.html">NietMijnOverheid</a>
 
-    </header>
+          
 
+        </header>
 
-    <main>
         
-	    <nav>
-		    <ul>
-			    <li><a href="index.html">Contact</a></li>
-		    </ul>
-	    </nav>
-
-        <h1>Contactformulier</h1>
-
-        <p>Blablabla lang paragraaf </br> nog meer tekst</p>
-
-        <a href="index.html">Vind de...</a>
-
-        <h2>Waar kunnen we u mee helpen?</h2>
-
-        <form> 
-
-            <label for="vnaam">Voornaam:</label>
-            <input type="text" id="vnaam" placeholder="Maak uw selectie...">
-
-            <label for="anaam">Achternaam:</label>
-            <input type="text" id="vnaam" placeholder="Maak uw selectie...">
-
-            <input type="submit">
-
-        </form>
-
-        <h2>Uw persoonsgegevens</h2>
-
-        <form></form>
+        <hr></hr>
 
 
-        <h2>Contactinformatie</h2>
+        <main>
+            
+            <nav>
+                <ul class="breadcrumbs">
+                    <li  class="breadcrumbs-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumbs-item"><a href="index.html">Contactformulier</a></li>
+                </ul>
+            </nav>
 
-        <h4>Mijnoverheid</h4>
+            <h1>Contactformulier</h1>
 
-        <script defer src="scripts/script.js"></script>
+            <p>Via onderstaand contactformulier kunt u een vraag, klacht of suggestie versturen over de werking van MijnOverheid.
+            </br></br>
+            Indien u een vraag heeft over de inhoud van berichten of andere zaken, neem dan contact op met de betreffende organisatie.</p>
+            </br></br>
 
-    </main>
+            <a href="index.html">vind de contactgegevens van een organisatie ></a>
 
-    <footer>
 
-    </footer>
 
-</body>
+            <form>
+            
+                <fieldset>
+                  <legend>Waar kunnen we u mee helpen?</legend>
+              
+                  <label for="vraag">Heeft u een vraag, klacht of suggestie?</label>
+                  <select id="vraag" required>
+                    <option value="" disabled selected>Selecteer een optie</option>
+                    <option value="vraag">Vraag</option>
+                    <option value="klacht">Klacht</option>
+                    <option value="suggestie">Suggestie</option>
+                  </select>
+              
+                  <label for="onderwerp">Onderwerp</label>
+                  <select id="onderwerp" required>
+                    <option value="" disabled selected>Selecteer een onderwerp</option>
+                    <option value="dienstregeling">Dienstregeling</option>
+                    <option value="vervoer">Vervoer</option>
+                    <option value="service">Service</option>
+                  </select>
+              
+                  <label for="bericht">Uw bericht</label>
+                  <textarea id="bericht" rows="4" required></textarea>
+                  
+                  <p class="feedback">😄</p>
+                </fieldset>
+              
+                <fieldset class="set-2">
+                  <legend>Contact Informatie</legend>
+              
+                  <label for="voorletters">Voorletters</label>
+                  <input id="voorletters" required type="text" placeholder="Uw voorletters">
+              
+                  <label for="achternaam">Achternaam</label>
+                  <input id="achternaam" required type="text" placeholder="Uw achternaam">
+              
+                  <label for="email">E-mailadres</label>
+                  <input id="email" required type="email" placeholder="Uw e-mailadres">
+                  <p id="emailError" class="error-message"></p>
+              
+                  <label for="telefoon">Telefoonnummer</label>
+                  <input id="telefoon" required type="tel" pattern="^\+?[0-9\s\-]{8,15}$" placeholder="Uw telefoonnummer">
+                  <p>Bijv. 0612345678</p>
+                  <p id="phoneError" class="error-message"></p>
+                  
+                  <p class="feedback">😄</p> <!-- Feedback emoji for Set 2 -->
+                </fieldset>
+              
+                <input type="submit" class="submit-button">
+            </form>      
 
-    </html>
+            <script defer src="scripts/script.js"></script>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+
+</html>

@@ -163,7 +163,6 @@ hr:nth-of-type(6){
 }
 
 
-
 ul hr{
 	margin-bottom: 0.5em;
 	margin-top: 0.5em;
@@ -218,17 +217,6 @@ ul{
 	padding-left: 0.5em;
 }
 
-/* 
-.row{
-	width:100%;
-	grid-template-columns: 20% 20% 20% 20% 20%;
-	height: 4em;
-	display: grid
-	align-items: center;
-	justify-content: center;
-
-} */
-
 nav{
 	display: flex;
 	max-height: max-content;
@@ -240,7 +228,6 @@ nav{
 	padding-right: 1.5em;
 	
 }
-
 
 
 .ham-menu {
@@ -348,10 +335,181 @@ header a:first-of-type:hover{
 
 }  */
 
-body[class="twee"] {
-	label {
-		background: hotpink;
-	}
+[class="twee"]>header{
+	background-image: none;
 
-	
 }
+
+
+[class="twee"]>header>a{
+	display:inline-block;
+	background-color: #a80600;
+
+}
+
+[class="twee"] hr{
+	width:100%;
+
+}
+
+
+form {
+	display:flex;
+	flex-direction:column;
+	transition: all .2s;
+	padding:1em;
+	background:HoneyDew;
+	max-width:30rem;
+	margin:0 auto;
+	overflow:hidden;
+	height:auto;
+}
+
+
+[class$="crumbs"]>a{
+
+}
+
+[class$="item"]{
+	display:inline-block;
+}
+
+
+[class$="item"]>a{
+	color:gray;
+
+}
+
+
+[class$="item"]>a:hover, main>a:hover{
+	text-decoration: underline;
+
+}
+
+/* 
+[class$="crumbs"]:last-of-type{
+	
+	font-weight: 5000;
+
+} */
+
+[class$="item"]:first-of-type::after{
+	content:'>';
+	color:lightgray;
+}
+
+
+
+  /* Form Styles */
+  form {
+	background-color: #ffffff;
+	max-width: auto;
+	margin: 2em auto;
+	padding: 2em;
+	border: 1px solid #dcdcdc;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fieldsets */
+  fieldset {
+	border: none;
+	margin-bottom: 1.5em;
+	padding: 1.5em;
+  }
+  
+  /* Legend styling */
+  legend {
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #003366;
+	margin-bottom: 1em;
+  }
+  
+  /* Labels and Inputs */
+  label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 0.5em;
+	color: #333333;
+  }
+  
+  input, select, textarea {
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	border: 1px solid #ccc; /* Neutral border color */
+	border-radius: 4px;
+	font-size: 1rem;
+	transition: border-color 0.3s ease;
+  }
+  
+  /* Individual field border color for valid inputs */
+  input:valid, select:valid, textarea:valid {
+	border-color: #4caf50; /* Green border for valid fields */
+  }
+  
+  /* Neutral state for invalid inputs */
+  input:invalid {
+	border-color: #ccc; /* Keep neutral color for invalid inputs */
+  }
+  
+  input:focus, select:focus, textarea:focus,{
+	border-color: #0072ce;
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(0, 114, 206, 0.3);
+  }
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  input:hover, select:hover, textarea:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .24);
+}  
+
+input:hover::placeholder {
+	color: black;
+}
+
+  
+  /* Set Background Colors */
+  fieldset:valid {
+	background-color: #d4edda;
+	padding-top: -2em; /* Light green background when all fields are valid */
+  }
+/*   
+  / Hide the second fieldset by default /
+  .set-2 {
+	display: none; / Hide initially /
+	opacity: 0; / Set opacity for transition /
+	transition: opacity 0.5s ease, transform 0.5s ease; /* Add transition /
+	transform: translateY(-20px); /* Start position for animation /
+  }
+  
+  /* Show the second fieldset when the first set is valid /
+  fieldset:valid ~ .set-2 {
+	display: block; /* Show the second fieldset /
+	opacity: 1; /* Fade in /
+	transform: translateY(0); /* Fly in /
+  } */
+  
+  /* Error Message Styles */
+  .error-message {
+	color: #a80600;
+	font-size: 0.9em;
+	margin-top: -0.5em;
+	margin-bottom: 1em;
+	display: none; /* Initially hide error messages */
+  }
+  
+  /* Feedback icon for complete sets */
+  .feedback {
+	color: #4caf50;
+	font-size: 2em;
+	display: none; /* Initially hidden */
+	text-align: center; /* Center the emoji */
+  }
+  
+  /* Show feedback emoji for valid inputs */
+  fieldset:valid > .feedback {
+	display: block; /* Show the feedback emoji when the set is valid */
+  }
+  
