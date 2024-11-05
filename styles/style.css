@@ -229,70 +229,90 @@ nav{
 	
 }
 
-
-.ham-menu {
-	height:50px;
-	width: 50px;
-	margin-left: auto;
-	position: relative;
-	display: flex;
-	justify-content: left;
-	align-items: left;
-	right:100%;
-
+[class^="ham-menu"] {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    right: 100%;
 }
 
-
-
-.ham-menu span {
-	height: 7px;
-	width:100%;
-	background-color: rgb(18, 53, 82);
-	border-radius: 20px;
-	position: absolute;
-	top: 50%;
-	right: 100%;
-	transform: translate(-50%, -50%);
-	transition: .5s ease;
-	
+[class^="ham-menu"] span {
+    height: 7px;
+    width: 100%;
+    background-color: rgb(18, 53, 82);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
 }
 
-
-
-.ham-menu span:nth-child(1){
-	top:25%;
+[class^="ham-menu"] span:nth-child(1) {
+    top: 25%;
 }
 
-
-
-.ham-menu span:nth-child(3){
-	top:75%;
+[class^="ham-menu"] span:nth-child(3) {
+    top: 75%;
 }
 
-
-
-.ham-menu.active span:nth-child(1){
-	top:50%;
-	transform:translate(-50%, -50%)rotate(45deg);
+/*Actieve status van de hamburger menu... sterretje betekent  */
+[class*="active"] span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
-
-
-.ham-menu.active span:nth-child(2){
-	opacity: 0;
+[class*="active"] span:nth-child(2) {
+    opacity: 0;
 }
 
-
-
-.ham-menu.active span:nth-child(3) {
-	top:50%;
-	transform: translate(-50%, 50%) translateY(-0.42em) rotate(-45deg);
+[class*="active"] span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, 50%) translateY(-0.42em) rotate(-45deg);
 }
 
+/* Off-Screen Menu */
+[class^="off-screen-menu"] {
+    background-color: #e17000;
+    height: 100vh;
+    width: 100vw;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .5s ease;
+    z-index: 0;
+}
 
+[class^="off-screen-menu"] ul {
+    padding-bottom: 20em;
+}
 
-.off-screen-menu.active{
-	right:0;
+[class^="off-screen-menu"] li {
+    list-style-type: none;
+    padding-bottom: 1em;
+}
+
+[class^="off-screen-menu"] a {
+    color: white;
+    display: flex;
+    text-align: left;
+    font-size: 2em;
+    padding-left: 0.5em;
+}
+
+/* Actieve status van het off-screen menu */
+[class*="off-screen-menu"].active {
+    right: 0;
 }
 
 
@@ -335,20 +355,35 @@ header a:first-of-type:hover{
 
 }  */
 
-[class="twee"]>header{
-	background-image: none;
+[class="twee"]{
+	background-color:#f5f5f5
 
 }
 
 
-[class="twee"]>header>a{
-	display:inline-block;
-	background-color: #a80600;
+[class="twee"] header{
+	background-image: none;
+	background-color: white;
+	height:100px;
+	box-shadow: 0px 0px 5px black;
+}
 
+
+[class="twee"] header a{
+	align-self: end;
 }
 
 [class="twee"] hr{
 	width:100%;
+	border-color: #007bc7;
+	margin-top: 65px;
+}
+
+
+[class="twee"] h1{
+	text-shadow: none;
+	font-size: 1.7em;
+	padding-left: 13px;
 
 }
 
@@ -367,6 +402,9 @@ form {
 
 
 [class$="crumbs"]>a{
+	display: flex;
+	justify-content: left;
+	align-items: left;
 
 }
 
@@ -420,10 +458,12 @@ form {
   
   /* Legend styling */
   legend {
-	font-size: 1.25em;
+	font-size: 1.5em;
 	font-weight: bold;
 	color: #003366;
-	margin-bottom: 1em;
+	background-color: inherit;/*zelfde als fieldset  */
+	padding:1em;
+	padding-bottom: 0.5em;
   }
   
   /* Labels and Inputs */
@@ -463,6 +503,8 @@ form {
   input:hover, select:hover, textarea:hover{
     transform: translateY(-2px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .24);
+	transition: ease-in 0.1s;
+
 }  
 
 input:hover::placeholder {
@@ -471,9 +513,9 @@ input:hover::placeholder {
 
   
   /* Set Background Colors */
-  fieldset:valid {
+fieldset:valid {
 	background-color: #d4edda;
-	padding-top: -2em; /* Light green background when all fields are valid */
+	padding:2em;
   }
 /*   
   / Hide the second fieldset by default /
@@ -513,3 +555,15 @@ input:hover::placeholder {
 	display: block; /* Show the feedback emoji when the set is valid */
   }
   
+  [class="submit-button"]{
+	background-color: #0072ce;
+	font-size: 1.25em;
+	padding: 0.75em 1.5em;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	color:white;
+	width:50%;
+	margin-left: 1.3em;
+
+  }
