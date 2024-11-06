@@ -100,7 +100,9 @@ ten slotte heb ik ook de opdrachten van flexbox en javascript gemaakt... alle op
 
 
   Hier zijn de breakdown schetsen:
-  <img src="/images/breakdownschetsen.pdf">
+  <img src="breakdownschetsen-1.svg" width="375px" alt="html breakdownschetsen eerste pagina">
+  <img src="breakdownschetsen-2.svg" width="375px" alt="html breakdownschetsen tweede pagina">
+  hier zijn de plaatjes van mijn uiteindelijke resultaat van de html breakdownschetsen.
 
   Aantekeningen toegankelijkheids les:
   <img src="/images/">
@@ -188,20 +190,32 @@ ten slotte heb ik ook de opdrachten van flexbox en javascript gemaakt... alle op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-  hier komt plaatje van mijn uiteindelijke resultaat van de twee pagina's zodra ik deze heb.
+  
+  <img src="Homepagina1.png" width="375px" alt="screenshot van de homepagina">
+  <img src="Homepagina2.png" width="375px" alt="screenshot van de homepagina">
+  <img src="Homepagina3.png" width="375px" alt="screenshot van de homepagina">  
+  <img src="Hamburgermenu.png" width="375px" alt="screenshot van de homepagina">  
+  <img src="Contactformulier1.png" width="375px" alt="screenshot van de contactformulier pagina">
+  <img src="Contactformulier2.png" width="375px" alt="screenshot van de contactformulier pagina">
+  <img src="Contactformulier3.png" width="375px" alt="screenshot van de contactformulier pagina">
+  hier zijn de screenshots van mijn uiteindelijke resultaat van de pagina's van nietmijnoverheid.
 
 
   ### Dit ging goed/Heb ik geleerd: 
   geleerd dat ik code nog wat erger vind dan zelf gedacht.
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Uiteindelijk ben ik wel blij met het resultaat, vooral met het kunnen maken van een goed formulier.
 
 
   ### Dit was lastig/Is niet gelukt:
   Het afmaken van de opdracht. Ik heb meer tijd nodig en ik denk ook assistentie, ik hoop nog een feedback gesprek in te kunnen plannen vóór de herkansing.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Update: Ik vond het lastig als het niet lukte en ik geen idee meer had wat opties waren om het te laten werken. 
+
+  ### Update voor de herkansing:
+  Ik ben blij met het resultaat en dat ik het nu af heb. Het was interessant om veranderingen in de contactformulieren zijn geworden. Op de echte site wordt er bijvoorbeeld pas feedback gegeven wanneer je op verzenden klikt en ik heb er voor gezorgd dat dit al eerder het geval is. Ook is het duidelijker wanneer alles goed is.
+
+  Het gesprek in gaan blijft sppannend, maar hopelijk haal ik het vak (en hoef ik volgend jaar niet meer te coderen :)
+
 </details>
 
 
