@@ -19,6 +19,11 @@
 }
 
 
+::selection{
+	background-color: #f9b7b7;
+}
+
+
 a:hover{
 	text-decoration: underline;
 }

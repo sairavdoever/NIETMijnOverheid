@@ -40,12 +40,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="De begin pagina van de website">
+  <img src="MijnoverheidHomepagina.jpg" width="375px" alt="De begin pagina van de website(full page)">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Contactformulier pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="het contactformulier van mijnoverheid">
+  <img src="MijnoverheidContactformulierpagina.jpg" width="375px" alt="het contactformulier van mijnoverheid(full page)">
  
+  Als het niet werkt hier zijn de screenshots ook in een pdf...
+  <img src="/images/FullpagesMijnoverheid.pdf" alt="Breakdown schetsen">
+
 </details>
 
 
@@ -55,8 +58,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
+  <img src="/images/WCAG-checklist-MijnOverheid.pdf" alt="Breakdown schetsen">
+
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+  Over het algemeen extreem toegankelijk.
+  Punten die me wel opvielen wat tegenviel waren: 
+  1. errors, vooral op de tweede pagina, van het contactformulier.
+  2. meerdere keren een alt attribute vergeten op een image.
+  3. maken gebruik van standaard instellingen bijvoorbeeld voor ::selection
+  4. Misschien wel het belangrijkste wat me opviel, want echt onhandig is: Dat je geen feedback krijgt op je formulier of je iets hebt gemist et cetera tot dat je op verzenden klikt!
 
 </details>
 
@@ -67,14 +79,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
+  <!-- ### de hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
 
   <img src="/images/breakdownschetsen.pdf" alt="Breakdown schetsen">
 
@@ -90,22 +102,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Stand van zaken is dat ik de website MijnOverheid heb gekozen. Hier heb ik breakdownschetsen gemaakt van 2 pagina's. De homepagina en het contactformulier. Daarbij het ik voor de eerste pagina door middel van de breakdown schets mijn html opgesteld. Deze week heb ik ook alle opdrachten gedaan tijdens de lessen. Hierbij horen de opdrachten van grid maar ook de toegankelijkheidstest bij van de officiele website. Dit zijn de foto's van de test:
-  <img src="/images/">
-  <img src="/images/">
-  <img src="/images/">
+  Stand van zaken is dat ik de website MijnOverheid heb gekozen. Hier heb ik breakdownschetsen gemaakt van 2 pagina's. De homepagina en het contactformulier. Daarbij het ik voor de eerste pagina door middel van de breakdown schets mijn html opgesteld. Deze week heb ik ook alle opdrachten gedaan tijdens de lessen. Hierbij horen de opdrachten van grid maar ook de toegankelijkheidstest bij van de officiele website. 
 
-Uit de test kwam vooral, over het algemeen heel erg naar voren dat het al een hele toegankelijke website is. Ik wil gaan testen dat als ik wat aanpassingen maak aan de pagina of het dan nog zo toegankelijk is.
-ten slotte heb ik ook de opdrachten van flexbox en javascript gemaakt... alle opdrachten. Ze gingen en gaan allemaal altijd goed. Ik ben benieuwd of ik ze straks ook zelf kan toepassen. Het begin is erg lastig.
+  Uit de test kwam vooral, over het algemeen heel erg naar voren dat het al een hele toegankelijke website is. Ik wil gaan testen dat als ik wat aanpassingen maak aan de pagina of het dan nog zo toegankelijk is. (eerste pagina)
+  ten slotte heb ik ook de opdrachten van flexbox en javascript gemaakt... alle opdrachten. Ze gingen en gaan allemaal goed. Ik ben benieuwd of ik ze straks ook zelf kan toepassen. Het begin is erg lastig.
 
 
   Hier zijn de breakdown schetsen:
   <img src="breakdownschetsen-1.svg" width="375px" alt="html breakdownschetsen eerste pagina">
   <img src="breakdownschetsen-2.svg" width="375px" alt="html breakdownschetsen tweede pagina">
   hier zijn de plaatjes van mijn uiteindelijke resultaat van de html breakdownschetsen.
+  
+  <img src="/images/breakdownschetsen.pdf" alt="Breakdown schetsen">
 
-  Aantekeningen toegankelijkheids les:
-  <img src="/images/">
 
 
   ### Agenda voor meeting
