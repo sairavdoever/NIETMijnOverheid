@@ -58,7 +58,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
-  <img src="/images/WCAG-checklist-MijnOverheid.pdf" alt="Breakdown schetsen">
+  <img src="/images/WCAG-checklist-MijnOverheid.pdf" alt="ingevulde WCAG checklist">
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
@@ -160,7 +160,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-  N.V.T test nog niet gedaan, watn website is nog niet af genoeg voor zo'n test.
+  N.V.T test nog niet gedaan, want website is nog niet af genoeg voor zo'n test.
+
+  Update:
+
+
+  <img src="/images/WCAG-checklist-MijnOverheid.pdf" alt="ingevulde WCAG checklist">
 
 </details>
 
