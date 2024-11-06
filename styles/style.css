@@ -1,24 +1,22 @@
-/**************/
-/* CSS REMEDY */
-/**************/
+
 *, *::after, *::before {
   box-sizing:border-box;  
   margin:0;
   font-family: 'montsserat thin', sans-serif;
 }
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
+
 :root {
-	/* startje */
+	
 	--color-text:#111;
 	--color-background:#eee;
 }
 
-/****************/
-/* JOUW STYLING */
-/****************/
+
+*:focus {
+	outline: 2px dotted #007bc7 ;
+	padding: 0.5em;
+}
 
 
 header {
@@ -35,11 +33,9 @@ header {
 }
 
 
-
 header p{
 	color:white;
 }
-
 
 
 p, h2, h3, h4, a{
@@ -51,7 +47,6 @@ p, h2, h3, h4, a{
 }
 
 
-
 h1{
 	font-size: 3em;
 	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
@@ -60,18 +55,15 @@ h1{
 }
 
 
-
 h2{
 	padding-top: 1em;
 }
-
 
 
 h3{
 	padding-top: 1em;
 	padding-bottom: 1em ;
 }
-
 
 
 p{
@@ -87,13 +79,11 @@ a{
 }
 
 
-
 footer{
 	background-color: #6a6d6f;
 	color:white;
 	font-family: 'montsserat extra', sans-serif;
 }
-
 
 
 footer p, footer h4{
@@ -104,11 +94,9 @@ footer p, footer h4{
 }
 
 
-
 footer p{
 	list-style: none;
 }
-
 
 
 footer li{
@@ -118,11 +106,9 @@ footer li{
 }
 
 
-
 footer a{
 	color:white;
 }
-
 
 
 footer h4{
@@ -131,14 +117,12 @@ footer h4{
 }
 
 
-
 hr{
 	margin-top: 2em;
 	margin-left: 1em;
 	margin-right: 1em;
 	margin-bottom: 1em;
 }
-
 
 
 hr:nth-of-type(4){
@@ -150,7 +134,6 @@ hr:nth-of-type(4){
 	
 	border-width: 0.3em;
 }
-
 
 
 hr:nth-of-type(6){
@@ -170,11 +153,9 @@ ul hr{
 }
 
 
-
 ul{
 	padding-bottom: 2em;
 }
-
 
 
 [class^="off"]{
@@ -195,18 +176,15 @@ ul{
 }
 
 
-
 [class^="off"] ul{
 	padding-bottom: 20em;
 }
-
 
 
 [class^="off"] li{
 	list-style-type: none;
 	padding-bottom: 1em;
 }
-
 
 
 [class^="off"] a{
@@ -216,6 +194,7 @@ ul{
 	font-size:2em;
 	padding-left: 0.5em;
 }
+
 
 nav{
 	display: flex;
@@ -229,6 +208,7 @@ nav{
 	
 }
 
+
 [class^="ham-menu"] {
     height: 50px;
     width: 50px;
@@ -239,6 +219,7 @@ nav{
     align-items: left;
     right: 100%;
 }
+
 
 [class^="ham-menu"] span {
     height: 7px;
@@ -252,30 +233,34 @@ nav{
     transition: .5s ease;
 }
 
+
 [class^="ham-menu"] span:nth-child(1) {
     top: 25%;
 }
+
 
 [class^="ham-menu"] span:nth-child(3) {
     top: 75%;
 }
 
-/*Actieve status van de hamburger menu... sterretje betekent  */
+
 [class*="active"] span:nth-child(1) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
+
 [class*="active"] span:nth-child(2) {
     opacity: 0;
 }
+
 
 [class*="active"] span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, 50%) translateY(-0.42em) rotate(-45deg);
 }
 
-/* Off-Screen Menu */
+
 [class^="off-screen-menu"] {
     background-color: #e17000;
     height: 100vh;
@@ -293,14 +278,17 @@ nav{
     z-index: 0;
 }
 
+
 [class^="off-screen-menu"] ul {
     padding-bottom: 20em;
 }
+
 
 [class^="off-screen-menu"] li {
     list-style-type: none;
     padding-bottom: 1em;
 }
+
 
 [class^="off-screen-menu"] a {
     color: white;
@@ -310,11 +298,10 @@ nav{
     padding-left: 0.5em;
 }
 
-/* Actieve status van het off-screen menu */
+
 [class*="off-screen-menu"].active {
     right: 0;
 }
-
 
 
 [class^="logo"]{
@@ -327,37 +314,16 @@ nav{
 	width: 3em;
 	position: absolute;
 	top:-.5em;
-
 }
-
 
 
 [class^="download"]{
 	width:100%;
 }
 
-/* 
-@keyframes button-animation{
-0% {
-	background-color:rgb(229, 126, 0);
-}
-100% {
-	background-color:blue;
-	transform: rotate(360deg);
-}
-} */
-/* 
-header a:first-of-type:hover{
-	animation-name: button-animation;
-	animation-duration: 1s;
-	animation-delay: .2s;
-	animation-fill-mode: forwards;
-
-}  */
 
 [class="twee"]{
 	background-color:#f5f5f5
-
 }
 
 
@@ -373,6 +339,7 @@ header a:first-of-type:hover{
 	align-self: end;
 }
 
+
 [class="twee"] hr{
 	width:100%;
 	border-color: #007bc7;
@@ -384,7 +351,6 @@ header a:first-of-type:hover{
 	text-shadow: none;
 	font-size: 1.7em;
 	padding-left: 13px;
-
 }
 
 
@@ -405,8 +371,8 @@ form {
 	display: flex;
 	justify-content: left;
 	align-items: left;
-
 }
+
 
 [class$="item"]{
 	display:inline-block;
@@ -415,21 +381,13 @@ form {
 
 [class$="item"]>a{
 	color:gray;
-
 }
 
 
 [class$="item"]>a:hover, main>a:hover{
 	text-decoration: underline;
-
 }
 
-/* 
-[class$="crumbs"]:last-of-type{
-	
-	font-weight: 5000;
-
-} */
 
 [class$="item"]:first-of-type::after{
 	content:'>';
@@ -437,9 +395,7 @@ form {
 }
 
 
-
-  /* Form Styles */
-  form {
+form {
 	background-color: #ffffff;
 	max-width: auto;
 	margin: 2em auto;
@@ -447,34 +403,35 @@ form {
 	border: 1px solid #dcdcdc;
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  /* Fieldsets */
-  fieldset {
+
+fieldset {
 	border: none;
 	margin-bottom: 1.5em;
 	padding: 1.5em;
-  }
+}
   
-  /* Legend styling */
-  legend {
+  
+legend {
 	font-size: 1.5em;
 	font-weight: bold;
 	color: #003366;
 	background-color: inherit;/*zelfde als fieldset  */
 	padding:1em;
 	padding-bottom: 0.5em;
-  }
+}
   
-  /* Labels and Inputs */
-  label {
+
+label {
 	font-weight: bold;
 	display: block;
 	margin-bottom: 0.5em;
 	color: #333333;
-  }
+}
   
-  input, select, textarea {
+  
+input, select, textarea {
 	width: 100%;
 	padding: 0.5em;
 	margin-bottom: 1em;
@@ -482,84 +439,67 @@ form {
 	border-radius: 4px;
 	font-size: 1rem;
 	transition: border-color 0.3s ease;
-  }
+}
   
-  /* Individual field border color for valid inputs */
-  input:valid, select:valid, textarea:valid {
-	border-color: #4caf50; /* Green border for valid fields */
-  }
   
-  /* Neutral state for invalid inputs */
-  input:invalid {
-	border-color: #ccc; /* Keep neutral color for invalid inputs */
-  }
+input:valid, select:valid, textarea:valid {
+	border-color: #4caf50; 
+}
   
-  input:focus, select:focus, textarea:focus,{
+
+input:focus, select:focus, textarea:focus{
 	border-color: #0072ce; 
 	outline: none;
 	box-shadow: 0 0 0 2px rgba(0, 114, 206, 0.3);
-  }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-  input:hover, select:hover, textarea:hover{
+}
+
+
+input:hover, select:hover, textarea:hover{
     transform: translateY(-2px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .24);
 	transition: ease-in 0.1s;
-
 }  
+
 
 input:hover::placeholder {
 	color: black;
 }
 
+
 input:invalid:not(:focus):not(:placeholder-shown){
 	border-color: #d9534f;
 }
 
-  
-  /* Set Background Colors */
+
 fieldset:valid {
 	background-color: #d4edda;
 	padding:2em;
-  }
-/*   
-  / Hide the second fieldset by default /
-  .set-2 {
-	display: none; / Hide initially /
-	opacity: 0; / Set opacity for transition /
-	transition: opacity 0.5s ease, transform 0.5s ease; /* Add transition /
-	transform: translateY(-20px); /* Start position for animation /
-  }
+}
   
-  /* Show the second fieldset when the first set is valid /
-  fieldset:valid ~ .set-2 {
-	display: block; /* Show the second fieldset /
-	opacity: 1; /* Fade in /
-	transform: translateY(0); /* Fly in /
-  } */
-  
-  /* Error Message Styles */
-  .error-message {
+
+[class="error-message"] {
 	color: #a80600;
 	font-size: 0.9em;
 	margin-top: -0.5em;
 	margin-bottom: 1em;
-	display: none; /* Initially hide error messages */
-  }
+	display: none; 
+}
   
-  /* Feedback icon for complete sets */
-  .feedback {
+
+[class="feedback"] {
 	color: #4caf50;
 	font-size: 2em;
-	display: none; /* Initially hidden */
-	text-align: center; /* Center the emoji */
-  }
+	display: none; 
+	text-align: center; 
+}
   
-  /* Show feedback emoji for valid inputs */
-  fieldset:valid > .feedback {
-	display: block; /* Show the feedback emoji when the set is valid */
-  }
+
+fieldset:valid > .feedback {
+	display: block; 
+}
   
-  [class="submit-button"]{
+
+[class="submit-button"]{
 	background-color: #0072ce;
 	font-size: 1.25em;
 	padding: 0.75em 1.5em;
@@ -569,5 +509,4 @@ fieldset:valid {
 	color:white;
 	width:50%;
 	margin-left: 1.3em;
-
-  }
+}
