@@ -162,10 +162,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   N.V.T test nog niet gedaan, want website is nog niet af genoeg voor zo'n test.
 
-  Update:
+  Update: Ik heb de test gedaan en de belangrijkste dingen verbeterd... ookal zijn er ook dingen anders en misschien minder goed.
+  1. hamburgermenu is mogelijk onoverzichtelijker, maar heeft wel alles op een rijtje om makkelijk te navigeren.
+  2. Ik heb ipv standaard selection een nieuwe gemaakt voor een uniekere look
+  3. Ik heb er voor gezorgd dat je bij de feedback nu sneller feedback krijgt en niet pas als je op verzenden klinkt, dus veel toegankelijker.
+  4. Ten slotte heb ik geen errors in tegenstelling tot de echte site.
 
 
-  <img src="/images/WCAG-checklist-MijnOverheid.pdf" alt="ingevulde WCAG checklist">
+  <img src="/images/WCAG-checklist-NietMijnOverheid.pdf" alt="ingevulde WCAG checklist">
 
 </details>
 
